@@ -1,2 +1,0 @@
-# Goose
-My first repozitory
