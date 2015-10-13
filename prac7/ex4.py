@@ -9,6 +9,6 @@ ion()
 for i in range (100):
     x=[math.sin(a[0]*t+i/5) for t in T]
     y=[math.cos(2*t) for t in T]
-    #clf()
+    clf()
     plot(x,y)
     draw()
