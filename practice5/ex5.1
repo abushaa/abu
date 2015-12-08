@@ -1,0 +1,6 @@
+from random import *
+data = open('int_data.txt','w')
+for i in range(100):
+    x = randint(0,100)
+    data.write(str(x)+' ')
+data.close()
