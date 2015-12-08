@@ -1,0 +1,16 @@
+input = open('float_data.txt', 'r')
+List = list(map(float, input.read().split()))
+
+Average = sum(List)/len(List)
+print('Average', Average)
+
+sum_sigma = 0
+for i in List:
+    sum_sigma += (Average - i) ** 2
+sigma = sum_sigma/len(List)
+print('Standart deviation', sigma)
+
+max_number = max(List)
+print('Max number', max_number, 'its location', List.index(max_number))
+min_number = min(List)
+print('Min number', min_number, 'its location', List.index(min_number))
