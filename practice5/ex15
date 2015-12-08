@@ -1,0 +1,9 @@
+n = int(input())
+passengers = list(map(int, input().split()))
+k = int(input())
+max = 0
+for i in range(n - 2):
+    a = passengers[i] + passengers[i+1] + passengers[i+2]
+    if a > max:
+        max = a
+print(max)
