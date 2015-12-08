@@ -1,0 +1,6 @@
+from random import *
+f = open('float_data.txt', 'w')
+for i in range(100):
+    x = '%.2f' %float(randint(0,100) + random())
+    f.write(str(x) + ' ')
+f.close()
